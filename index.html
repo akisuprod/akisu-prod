@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AKISU - Polarity</title>
+  <meta name="description" content="Polarity — a 5-song mini album by AKISU. Listen to previews and stream on your favorite platform." />
+
+  <meta property="og:title" content="AKISU — Polarity" />
+  <meta property="og:description" content="A 5-song mini album by AKISU. Listen now." />
+  <meta property="og:type" content="music.album" />
+  <meta property="og:image" content="assets/cover/cover.jpg" />
+
+  <link rel="icon" href="assets/cover/cover.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=11" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="page">
+    <!-- ===== Left Panel: Cover + Identity + Distribution ===== -->
+    <section class="showcase">
+      <figure class="cover">
+        <img src="assets/cover/cover.jpg" alt="Polarity Album Cover by AKISU" width="1400" height="1400" />
+      </figure>
+
+      <div class="identity">
+        <p class="eyebrow">Mini Album</p>
+        <h1 class="album-title">Polarity</h1>
+        <p class="artist">AKISU</p>
+        <p class="meta">5 songs</p>
+      </div>
+
+      <!-- ===== Follow / Share ===== -->
+      <div class="actions">
+        <a class="action" href="https://open.spotify.com/artist/53uCUESn2C5UWbIHlWuXBx" target="_blank" rel="noopener" aria-label="Follow AKISU on Spotify">
+          <svg aria-hidden="true"><use href="assets/icons/icons.svg#ic-spotify"/></svg>
+          <span>Follow</span>
+        </a>
+        <button class="action" type="button" id="shareBtn" aria-label="Share this page">
+          <svg aria-hidden="true"><use href="assets/icons/icons.svg#ic-share"/></svg>
+          <span>Share</span>
+        </button>
+        <a class="action action--support" href="https://www.gofundme.com/f/harmony-fund-license-distribution-support" target="_blank" rel="noopener" aria-label="Support us on GoFundMe">
+          <svg aria-hidden="true"><use href="assets/icons/icons.svg#ic-heart"/></svg>
+          <span>Support us!</span>
+        </a>
+      </div>
+
+      <!-- ===== Distribution links ===== -->
+      <nav class="platforms" aria-label="Listen on">
+        <span class="platforms__label">Listen on</span>
+        <div class="platforms__list">
+          <a class="platform" href="https://open.spotify.com/album/3YYAclCwTIRCJNfyZ7sTJ2" target="_blank" rel="noopener" aria-label="Spotify">
+            <svg aria-hidden="true"><use href="assets/icons/icons.svg#ic-spotify"/></svg>
+            <span>Spotify</span>
+          </a>
+          <!-- Apple Music
+          <a class="platform" href="#" target="_blank" rel="noopener" aria-label="Apple Music">
+            <svg aria-hidden="true"><use href="assets/icons/icons.svg#ic-apple"/></svg>
+            <span>Apple Music</span>
+          </a>
+          -->
+          <a class="platform" href="https://music.youtube.com/playlist?list=OLAK5uy_mfcFuvEJOmg0RdOUJ-TFjyWMSYyOXPkwQ" target="_blank" rel="noopener" aria-label="YouTube Music">
+            <svg aria-hidden="true"><use href="assets/icons/icons.svg#ic-youtubemusic"/></svg>
+            <span>YouTube Music</span>
+          </a>
+          <!-- Amazon Music
+          <a class="platform" href="#" target="_blank" rel="noopener" aria-label="Amazon Music">
+            <svg aria-hidden="true"><use href="assets/icons/icons.svg#ic-amazon"/></svg>
+            <span>Amazon Music</span>
+          </a>
+          -->
+        </div>
+      </nav>
+    </section>
+
+    <!-- ===== Right-Panel: Tracklist ===== -->
+    <section class="tracklist" aria-label="Tracklist">
+      <ol class="tracks" id="tracks">
+        <li class="track" data-src="assets/audio/Calling_You.mp3" data-title="Calling You">
+          <button class="track__btn" type="button" aria-label="Play Calling You">
+            <svg class="ic-play" aria-hidden="true"><use href="assets/icons/icons.svg#ic-play"/></svg>
+            <svg class="ic-pause" aria-hidden="true"><use href="assets/icons/icons.svg#ic-pause"/></svg>
+          </button>
+          <span class="track__num">1</span>
+          <div class="track__body">
+            <span class="track__title">Calling You</span>
+            <div class="track__bar"><div class="track__fill"></div></div>
+          </div>
+          <span class="track__time">0:42</span>
+        </li>
+
+        <li class="track" data-src="assets/audio/Nice_2_Meet_U.mp3" data-title="Nice 2 Meet U">
+          <button class="track__btn" type="button" aria-label="Play Nice 2 Meet U">
+            <svg class="ic-play" aria-hidden="true"><use href="assets/icons/icons.svg#ic-play"/></svg>
+            <svg class="ic-pause" aria-hidden="true"><use href="assets/icons/icons.svg#ic-pause"/></svg>
+          </button>
+          <span class="track__num">2</span>
+          <div class="track__body">
+            <span class="track__title">Nice 2 Meet U</span>
+            <div class="track__bar"><div class="track__fill"></div></div>
+          </div>
+          <span class="track__time">0:48</span>
+        </li>
+
+        <li class="track" data-src="assets/audio/Summertime.mp3" data-title="Summertime">
+          <button class="track__btn" type="button" aria-label="Play Summertime">
+            <svg class="ic-play" aria-hidden="true"><use href="assets/icons/icons.svg#ic-play"/></svg>
+            <svg class="ic-pause" aria-hidden="true"><use href="assets/icons/icons.svg#ic-pause"/></svg>
+          </button>
+          <span class="track__num">3</span>
+          <div class="track__body">
+            <span class="track__title">Summertime</span>
+            <div class="track__bar"><div class="track__fill"></div></div>
+          </div>
+          <span class="track__time">0:38</span>
+        </li>
+
+        <li class="track" data-src="assets/audio/Time_Again.mp3" data-title="Time Again">
+          <button class="track__btn" type="button" aria-label="Play Time Again">
+            <svg class="ic-play" aria-hidden="true"><use href="assets/icons/icons.svg#ic-play"/></svg>
+            <svg class="ic-pause" aria-hidden="true"><use href="assets/icons/icons.svg#ic-pause"/></svg>
+          </button>
+          <span class="track__num">4</span>
+          <div class="track__body">
+            <span class="track__title">Time Again</span>
+            <div class="track__bar"><div class="track__fill"></div></div>
+          </div>
+          <span class="track__time">0:43</span>
+        </li>
+
+        <li class="track" data-src="assets/audio/Empty.mp3" data-title="Empty">
+          <button class="track__btn" type="button" aria-label="Play Empty">
+            <svg class="ic-play" aria-hidden="true"><use href="assets/icons/icons.svg#ic-play"/></svg>
+            <svg class="ic-pause" aria-hidden="true"><use href="assets/icons/icons.svg#ic-pause"/></svg>
+          </button>
+          <span class="track__num">5</span>
+          <div class="track__body">
+            <span class="track__title">Empty</span>
+            <div class="track__bar"><div class="track__fill"></div></div>
+          </div>
+          <span class="track__time">0:46</span>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> AKISU · Polarity</p>
+  </footer>
+
+  <script src="app.js?v=5"></script>
+</body>
+</html>
